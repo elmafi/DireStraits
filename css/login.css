@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+@font-face
+{
+    font-family: 'papyrus';
+    src: url('../polices/papyrus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('../polices/dayrom.eot');
+    src: url('../polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('../polices/dayrom.woff') format('woff'),
+         url('../polices/dayrom.ttf') format('truetype'),
+         url('../polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, body * 
+{
+	margin:0;
+	padding:0;
+}
+
+#global
+{
+	width:100%;
+	height:600px;
+}
+
+/*MEDIDAS*/
+
+#cab-inicio
+{
+	width:100%;
+	height:20%;
+	background:url('../images/cab.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+#cuerpo
+{
+	width:100%;
+	height:60%;
+	background:url('../images/fondoblanco.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+#pie
+{
+	width:100%;
+	height:20%;
+	background:url('../images/pie.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+/* CABECERA INICIO */
+#acceso
+{
+	width: 25%;
+	height: 100%;
+	font-family:papyrus;
+	font-size: 1.3em;
+	color: white;
+	float:left;
+	letter-spacing: 2px;
+	text-align:center;
+}
+
+#acceso a
+{
+	text-decoration:none;
+	color: white;
+}
+
+#acceso p
+{
+	margin-top: 5%;
+}
+
+#acceso a:hover
+{
+	color:#F9CF24;
+}
+
+#cab-inicio h1
+{
+	width: 50%;
+	height:60%;
+	display:inline-block;
+}
+
+.titulo
+{
+	text-align: center;
+	font-family:papyrus;
+	font-size: 3em;
+	color: white;
+	font-weight:bold;
+	letter-spacing:5px;
+}
+
+#enlaces_cab
+{
+	width:25%;
+	height: 60%;
+	font-family:verdana;
+	font-size: 0.8em;
+	color: white;
+	float:right;
+	text-align:center;
+}
+
+#enlaces_cab img:hover
+{
+	transform:scale(1.2);
+    -ms-transform:scale(1.2);
+}
+
+#enlaces_cab img
+{
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+}
+
+#enlaces_cab p
+{
+	margin-top: 4%;
+}
+
+#menu
+{
+    display: inline-block;
+	width: 60%;
+	height: 40%;
+}
+
+#menu ul
+{
+    list-style-type: none;
+	padding-right: 1%;
+}
+
+#menu li
+{
+    display: inline-block;
+	margin-right: 15px;
+	padding: 2px;	
+}
+
+#menu a
+{
+    text-align: center;
+	font-size: 1.6em;
+	font-family: papyrus;
+	color: white;
+    text-decoration: none;
+}
+
+#menu a:hover
+{
+	color: #F9CF24;
+}
+
+/* CUERPO */
+
+#formulario
+{
+    width:21%;
+	height:58%;
+	display:block;
+	margin:2% auto;
+	font-family:dayrom;
+	font-size: 1.5em;
+	padding-left:1%;
+	padding-top:1%;
+    background:url('../images/cab.png') no-repeat;
+	background-size: 100% 100%;
+    -webkit-border-radius:3px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+}
+ 
+label
+{
+    color: white;
+    font-weight: bold;
+	margin-top:0;
+}
+ 
+input
+{
+    border-radius:5px;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);
+    font:bold 12px Arial, Helvetica, sans-serif;
+    height: 24px;
+    padding:0 5px;
+    width: 240px;
+	background:#FFECB8;
+}
+
+#usuario
+{
+	margin-bottom:2%;
+}
+
+.boton
+{
+    background: #ccc;
+    background: -webkit-linear-gradient(top,#fc6,#f63);
+    background: linear-gradient(top,#fc6,#f63);
+    color: #666;
+    width: 120px;
+}
+ 
+.boton:active
+{
+    position: relative;
+    top: 3px;
+}
+ 
+#bot1, #bot2
+{
+	display:inline-block;
+	margin-left:1%;
+} 
+ 
+form,p
+{
+    margin:0;
+}
+ 
+#formulario p
+{
+    padding-bottom: 10px;
+}
+ 
+
+p#bot1, p#bot2
+{
+    padding-top: 5px;
+}
+
+.boton:hover
+{
+	background: #F9CF24;
+}
+
+/* PIE */
+
+#bannerabajo
+{
+	font-family:dayrom;
+	width:96%;
+	height:100%;
+	display:inline-block;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top:0;
+}
+
+#avisos
+{
+	float:left;
+	text-align:left;
+	vertical-align:text-bottom;
+	margin-top:4%;
+	color:white;
+}
+
+#imagenpie
+{
+	display:inline-block;
+	margin-left: 12%;
+	margin-top:1%;
+}
+
+.nombre
+{
+	height: 100px;
+	width: 180px;
+}
+
+#enlaces_pie
+{
+	float:right;
+	text-align:right;
+	margin-top:5%;
+}
+
+#enlaces_pie img
+{
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+}
+
+#enlaces_pie img:hover
+{
+	transform:scale(1.2);
+    -ms-transform:scale(1.2);
+}
+
+#avisos a
+{
+	text-decoration:none;
+	color:white;
+}
+
+#avisos a:hover
+{
+	color: #F9CF24;
+}
+
+
+

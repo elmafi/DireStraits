@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+@font-face
+{
+    font-family: 'papyrus';
+    src: url('../polices/papyrus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('../polices/dayrom.eot');
+    src: url('../polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('../polices/dayrom.woff') format('woff'),
+         url('../polices/dayrom.ttf') format('truetype'),
+         url('../polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, body * 
+{
+	margin:0;
+	padding:0;
+}
+
+#global
+{
+	width:100%;
+	height:768px;
+}
+
+/*MEDIDAS GLOBALES*/
+
+#cab-inicio
+{
+	width:100%;
+	height:15%;
+	background:url('../images/cab.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+#cuerpo
+{
+	width:100%;
+	height:70%;
+	background:url('../images/fondoblanco.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+#pie
+{
+	width:100%;
+	height:15%;
+	background:url('../images/pie.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+/* CABECERA INICIO */
+#acceso
+{
+	width: 25%;
+	height: 100%;
+	font-family:papyrus;
+	font-size: 1.3em;
+	color: white;
+	float:left;
+	letter-spacing: 2px;
+	text-align:center;
+}
+
+#acceso a
+{
+	text-decoration:none;
+	color: white;
+}
+
+#acceso p
+{
+	margin-top: 5%;
+}
+
+#acceso a:hover
+{
+	color:#F9CF24;
+}
+
+#cab-inicio h1
+{
+	width: 50%;
+	height:60%;
+	display:inline-block;
+}
+
+.titulo
+{
+	text-align: center;
+	font-family:papyrus;
+	font-size: 3em;
+	color: white;
+	font-weight:bold;
+	letter-spacing:5px;
+}
+
+#enlaces_cab
+{
+	width:25%;
+	height: 60%;
+	font-family:verdana;
+	font-size: 0.8em;
+	color: white;
+	float:right;
+	text-align:center;
+}
+
+#enlaces_cab img:hover
+{
+	transform:scale(1.2);
+    -ms-transform:scale(1.2);
+}
+
+#enlaces_cab img
+{
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+}
+
+#enlaces_cab p
+{
+	margin-top: 4%;
+}
+
+#menu
+{
+    display: inline-block;
+	width: 60%;
+	height: 40%;
+}
+
+#menu ul
+{
+    list-style-type: none;
+	padding-right: 1%;
+}
+
+#menu li
+{
+    display: inline-block;
+	margin-right: 15px;
+	padding: 2px;	
+}
+
+#menu a
+{
+    text-align: center;
+	font-size: 1.6em;
+	font-family: papyrus;
+	color: white;
+    text-decoration: none;
+}
+
+#menu a:hover
+{
+	color: #F9CF24;
+}
+
+/* CUERPO */
+
+.subtitulo
+{
+	text-align: center;
+	font-size: 2.5em;
+	font-family: papyrus;
+	color: #2A2A2A;
+	padding-top: 2%;
+	letter-spacing: 3px;
+	width:100%;
+}
+
+.mini a
+{
+	text-align: center;
+	font-size: 1em;
+	font-family: papyrus;
+	color: #2A2A2A;
+	text-decoration:none;
+	vertical-align:top;
+}
+
+.iframe
+{
+	width:480px;
+	height:360px;
+}
+
+#videobox 
+{
+	width:670px;
+	height: 360px;
+	margin: 1% auto;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;>
+	border-radius: 10px;
+	background:url('../images/cab.png') no-repeat;
+	background-size:100% 100%;
+	border:1px solid #5A5A5A;
+	padding:10px; 
+	-moz-box-shadow: 0px 0px 30px #E3E3E3;
+	-webkit-box-shadow: 0px 0px 30px #E3E3E3;
+	box-shadow: 0px 0px 30px #E3E3E3;
+}
+
+.mini 
+{
+	background:url('../images/pie.png') no-repeat;
+	background-size:100% 100%;
+	-webkit-border-radius:3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 1% 4%;
+	width:92%;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition:0.5s;
+	transition: 0.5s;
+}
+
+.mini img:hover 
+{
+	-webkit-box-shadow: 0px 0px 10px 4px #F9CF24;
+	-moz-box-shadow: 0px 0px 10px 4px #F9CF24;
+	box-shadow: 0px 0px 10px 4px #F9CF24;
+	transition: 0.30s;
+	-webkit-transition: 0.30s;
+	-moz-transition: 0.30s;
+	-ms-transition: 0.30s;
+	-o-transition: 0.30s;
+}
+
+/* PIE */
+
+#bannerabajo
+{
+	font-family:dayrom;
+	width:96%;
+	height:100%;
+	display:inline-block;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top:0;
+}
+
+#avisos
+{
+	float:left;
+	text-align:left;
+	vertical-align:text-bottom;
+	margin-top:4%;
+	color:white;
+}
+
+#imagenpie
+{
+	display:inline-block;
+	margin-left: 12%;
+	margin-top:1%;
+}
+
+.nombre
+{
+	height: 100px;
+	width: 180px;
+}
+
+#enlaces_pie
+{
+	float:right;
+	text-align:right;
+	margin-top:5%;
+}
+
+#enlaces_pie img
+{
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+}
+
+#enlaces_pie img:hover
+{
+	transform:scale(1.2);
+    -ms-transform:scale(1.2);
+}
+
+#avisos a
+{
+	text-decoration:none;
+	color:white;
+}
+
+#avisos a:hover
+{
+	color: #F9CF24;
+}
+
+
+
